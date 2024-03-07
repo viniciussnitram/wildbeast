@@ -16,7 +16,9 @@ a {
 }
 
 img {
+    display: block;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 /* General Grid */
@@ -31,7 +33,6 @@ img {
 }
 
 /* Header */
-
 .header {
     grid-area: header;
     background: linear-gradient(135deg, #8844EE, #B07DFB);
@@ -69,7 +70,6 @@ img {
 }
 
 /* Sidenav */
-
 .sidenav {
     grid-area: sidenav;
     background: #FAFBFC;
@@ -93,18 +93,29 @@ img {
 }
 
 .sidenav ul li a img {
-    height: 100px;
-    width: 100px;
+    width: auto;
+    height: auto;
 }
 
+/* Content */
 .content {
     grid-area: content;
 }
 
+/* Ad */
 .ad {
     grid-area: ad;
+    background: #FAFBFC;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    grid-gap: 30px; 
 }
 
+.ad .ad-item img {
+    width: auto;
+    height: auto;
+}
 
 /* Footer */
 .footer {
