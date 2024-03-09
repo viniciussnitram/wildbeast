@@ -121,6 +121,69 @@ img {
     grid-column: 1 / -1;
 }
 
+.content p { 
+    font-size: 1.25em;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba(0, 0, 0, .7);
+}
+
+.content .informations p + p {
+    margin-top: 30px;
+}
+
+.content .title {
+    color: #B07DFB;
+}
+
+.content .title h1 {
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.content .title span {
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+.content .characteristics {
+    display: flex;
+    align-items: flex-start;
+}
+.content .characteristics > div {
+    width: 80px;
+    text-align: center;
+    background: linear-gradient(135deg, #8844EE, #B07DFB);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, .15);
+    position: relative;
+}
+
+.content .characteristics > div:first-child { 
+    margin-right: 30px;
+}
+
+.content .characteristics span {
+    display: block;
+    color: #B07DFB;
+}
+
+.content .characteristics .number {
+    color: #B07DFB;
+    font-size: 3em;
+    line-height: 1;
+    margin: 10px auto;
+}
+
+.content .characteristics .label {
+    background: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px 0px;
+    position: relative;
+    top: 2px;
+}
+
 /* Ad */
 .ad {
     grid-area: ad;
