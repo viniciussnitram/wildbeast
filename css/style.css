@@ -101,11 +101,11 @@ img {
 .content {
     grid-area: content;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    gap: 30px;
 }
 
 .image-1 {
@@ -122,7 +122,7 @@ img {
 }
 
 .content p { 
-    font-size: 1.25em;
+    font-size: 1.2em;
     line-height: 1.6;
     letter-spacing: -0.005em;
     color: rgba(0, 0, 0, .7);
@@ -170,7 +170,6 @@ img {
 }
 
 .content .characteristics .number {
-    color: #B07DFB;
     font-size: 3em;
     line-height: 1;
     margin: 10px auto;
@@ -182,6 +181,40 @@ img {
     padding: 5px 0px;
     position: relative;
     top: 2px;
+}
+
+.content .emphasis {
+    font-size: 0.875em;
+    color: #B07DFB;
+    max-width: 16em;
+}
+
+.content .quotation, .content .attributes {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, .15);
+    background: linear-gradient(135deg, #8844EE, #B07DFB);
+    align-self: start;
+}
+
+.content .quotation p {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+    margin: 0px auto;
+    color: white;
+}
+
+.content .attributes li {
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1.125em;
+    padding: 15px;
+}
+
+.content .attributes li + li {
+    border-top: 2px solid #B07DFB;
 }
 
 /* Ad */
