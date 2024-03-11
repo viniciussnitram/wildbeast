@@ -93,6 +93,24 @@ img {
     background: rgba(0, 0, 0, .5);
 }
 
+@media (max-width: 760px) {
+    .header {
+        grid-template-columns: auto;
+    }
+
+    .header .logo {
+        margin-bottom: 20px;
+    }
+
+    .header nav ul li + li {
+        margin-left: 10px;
+    }
+
+    .header nav ul li a {
+        font-size: 1em;
+    }
+}
+
 /* Sidenav */
 .sidenav {
     grid-area: sidenav;
@@ -119,6 +137,48 @@ img {
 .sidenav ul li a img {
     width: auto;
     height: auto;
+}
+
+@keyframes arrow {
+    from {
+        right: 30px;
+    }
+
+    to {
+        right: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .sidenav {
+        padding: 0px 30px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        position: relative;
+    }
+
+    .sidenav::after {
+        content: '→';
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        right: 30px;
+        color: rgba(0, 0, 0, .3);
+        animation: arrow .5s ease-in 0s infinite alternate;
+    }
+
+    .sidenav ul {
+        display: flex;
+    }
+
+    .sidenav ul li {
+        flex: 1 0 60px;
+    }
+
+    .sidenav ul li a {
+        margin: 30px 30px 30px 0px;
+    }
 }
 
 /* Content */
