@@ -17,7 +17,8 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
@@ -132,11 +133,6 @@ img {
 
 .sidenav ul li a:hover {
     background: #B07DFB;
-}
-
-.sidenav ul li a img {
-    width: auto;
-    height: auto;
 }
 
 @keyframes arrow {
@@ -301,6 +297,12 @@ img {
     border-top: 2px solid #B07DFB;
 }
 
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
+}
+
 /* Ad */
 .ad {
     grid-area: ad;
@@ -308,12 +310,8 @@ img {
     display: grid;
     align-content: start;
     padding: 30px;
-    grid-gap: 30px; 
-}
-
-.ad .ad-item img {
-    width: auto;
-    height: auto;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* Footer */
